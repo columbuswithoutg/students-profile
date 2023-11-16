@@ -35,20 +35,20 @@ $towncity = new TownCity($db);
             
             
             <?php
-            $results = $towncity->displayAll(); 
+            $results = $towncity->getAll(); 
             foreach ($results as $result) {
             ?>
             <tr>
-                <td><?php echo $result['student_number']; ?></td>
-                <td><?php echo $result['first_name']; ?></td>
+                <td><?php echo $result['id']; ?></td>
+                <td><?php echo $result['name']; ?></td>
                 <td><?php echo $result['middle_name']; ?></td>
                 <td><?php echo $result['last_name']; ?></td>
                 <td><?php echo $result['gender']; ?></td>
                 <td><?php echo $result['birthday']; ?></td>
                 <td>
-                    <a href="student_edit.php?id=<?php echo $result['id']; ?>">Edit</a>
+                    <a href="town_edit.php?id=<?php echo $result['id']; ?>">Edit</a>
                     |
-                    <a href="student_delete.php?id=<?php echo $result['id']; ?>">Delete</a>
+                    <a href="town_delete.php?id=<?php echo $result['id']; ?>">Delete</a>
                 </td>
             </tr>
         <?php } ?>
@@ -57,7 +57,7 @@ $towncity = new TownCity($db);
         </tbody>
     </table>
         
-    <a class="button-link" href="student_add.php">Add New Record</a>
+    <a class="button-link" href="town_add.php">Add New Record</a>
 
         </div>
         
