@@ -41,10 +41,6 @@ $towncity = new TownCity($db);
             <tr>
                 <td><?php echo $result['id']; ?></td>
                 <td><?php echo $result['name']; ?></td>
-                <td><?php echo $result['middle_name']; ?></td>
-                <td><?php echo $result['last_name']; ?></td>
-                <td><?php echo $result['gender']; ?></td>
-                <td><?php echo $result['birthday']; ?></td>
                 <td>
                     <a href="town_edit.php?id=<?php echo $result['id']; ?>">Edit</a>
                     |

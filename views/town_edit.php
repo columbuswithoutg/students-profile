@@ -56,10 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" value="<?php echo $towncityData['name']; ?>">
-        
-        <label for="first_name">First Name:</label>
-        <input type="text" name="first_name" id="first_name" value="<?php echo $studentData['first_name']; ?>">
-        
+ 
         <input type="submit" value="Update">
     </form>
     </div>

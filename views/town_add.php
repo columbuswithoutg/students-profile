@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="content">
     <h1>Add Town City Data</h1>
     <form action="" method="post" class="centered-form">
-        <label for="id">idate:</label>
+        <label for="id">id:</label>
         <input type="text" name="id" id="id" required>
 
         <label for="name">Name:</label>
